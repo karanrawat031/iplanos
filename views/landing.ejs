@@ -1,0 +1,27 @@
+<% include ./partials/header %>
+
+<div class='ui main text container'>
+	<br><br>
+	<div class="ui huge header">
+		<h2>||General Info About Your Computer||</h2>
+	</div>
+	<div class='ui top attached segment'>
+		<blockquote>
+                <p>Language:<%= lang.substr(0,5) %></p>
+                <p>Host:<%= host %></p>
+                <p>Os Type:<%= type %> &nbsp; <%= osversion %></p>
+                <p>Arch:<%=arch%></p>
+                <p>Endianness:<%=end%></p>
+                <p>FreeMemory:<%=freemem%></p>
+				<p>TotalMemory:<%=totalmem%></p>                
+				<p>Internet Address:<%=address%></p>
+				<p>Uptime:<%=uptime%></p>
+				<p>Cpu Model:<%=cpus[0].model%></p>
+        </blockquote>
+	</div>
+	<footer class="ui header">@KaranRawat 2016</footer>
+</div>
+
+
+
+<% include ./partials/footer %>
